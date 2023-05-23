@@ -15,8 +15,10 @@ func map_part01() {
 		"animal":  "panda",
 		"dessert": "cheesecake",
 	}
+
 	myFavorite["weather"] = "sunny" // 使用 [] 加入要新增進 map 的 key 與 value
 	fmt.Println("myFavorite", myFavorite)
+
 	for key, value := range myFavorite {
 		fmt.Println("key:", key, " = value:", value) // 將 key 與 value 一一印出來
 	}
@@ -44,6 +46,7 @@ var myFavorites02 = map[string]string{
 func DelMyFavorite(title string) {
 	delete(myFavorites02, title)
 }
+
 func main() {
 	fmt.Println("\n-----Part01-----")
 	map_part01()
