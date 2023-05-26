@@ -20,6 +20,7 @@ func array4() [6]int { // func 回傳一個長度為 6 型別為 int 的陣列
 	arr := [...]int{1, 2, 3, 9, 8, 7} // 定義一個長度為 6 型別為 int 的陣列(將長度省略為...)
 	return arr                        // 回傳 arr
 }
+
 func compareArrays1() (bool, bool, bool) { // func 回傳三個布林值
 	arr1 := [...]int{1, 2, 3}
 	var arr2 [3]int
