@@ -25,6 +25,7 @@ func Type1() {
 func Type2() {
 	favoriteFruit := []string{"apple", "kiwi", "peach", "mango"}
 	fmt.Println("\n----Type2----")
+
 	myFavorite := map[string]string{
 		"fruit":   "mango",
 		"animal":  "panda",

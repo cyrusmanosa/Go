@@ -3,6 +3,21 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println("----------------------------")
+	Sprintf()
+	fmt.Println("----------------------------")
+	PrintF()
+}
+
+// Sprint => Print 但return String
+func Sprintf() {
+	quantity := 10
+	fruits := "apples"
+	text := fmt.Sprint("I have ", quantity, " ", fruits, ".")
+	fmt.Printf("Value stored in text is: '%v'\n", text)
+}
+
+func PrintF() {
 	// GO 自動判斷值的變數型態
 	const numA int = 100 // 常數
 	name := "Cyrus"
@@ -11,7 +26,7 @@ func main() {
 
 	// Printf格式化輸出、格式化樣板語言
 	// PrintF (數字)
-	fmt.Println("-----//PrintF(數字)")
+	fmt.Println("-----------PrintF(數字)-----------------")
 
 	fmt.Printf("i have value: %v and type: %T \n", j, j)
 	fmt.Printf("%v\n", R)   // %v   =>  j的值，%T J 的型態
@@ -27,7 +42,7 @@ func main() {
 	fmt.Printf("%04b\n", R) // %04d =>  補04位
 
 	// (中文)
-	fmt.Println("-----//PrintF(中文)")
+	fmt.Println("-----------PrintF(中文)-----------------")
 
 	fmt.Printf("%s\n", name)   // %s    =>  淨字
 	fmt.Printf("%q\n", name)   // %q    =>  字, 雙引號
@@ -37,11 +52,11 @@ func main() {
 	fmt.Printf("%X\n", name)   // %X    =>  將字轉16進 空香位分開表示
 
 	// (真偽)
-	fmt.Println("-----//PrintF(真偽)")
+	fmt.Println("-----------PrintF(真偽)-----------------")
 	fmt.Printf("%t\n", win)
 
 	// (浮動數)
-	fmt.Println("-----//PrintF(浮動數)")
+	fmt.Println("-----------PrintF(浮動數)-----------------")
 	fmt.Printf("%e\n", P)    // %e    => e指數的科學記數法表示
 	fmt.Printf("%f\n", P)    // %f    => 小數點，無指數
 	fmt.Printf("%.2f\n", P)  // %.2f  => 小數點後兩個位
