@@ -37,6 +37,7 @@ func PrintF() {
 	fmt.Printf("%x\n", R)   // %x   =>  16進 英-細草
 	fmt.Printf("%X\n", R)   // %X   =>  16進 英-大草
 	fmt.Printf("%#x\n", R)  // %#x  =>  16進 0x
+	fmt.Printf("%2.x\n", R) // %#x  =>  16進 兩位數字
 	fmt.Printf("%4b\n", R)  // %4d  =>  對齊右的4位表示
 	fmt.Printf("%-4b\n", R) // %-4d =>  對齊左
 	fmt.Printf("%04b\n", R) // %04d =>  補04位
